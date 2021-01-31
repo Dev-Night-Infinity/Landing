@@ -1,0 +1,126 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  html {
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .features {
+      contain: 40%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  html {
+    font-size: 10px;
+    header {
+      input[type="email"] {
+        width: 50%;
+        padding: 2rem 1.6rem;
+      }
+      .btn {
+        display: inline;
+      }
+    }
+    .features {
+      .row {
+        display: flex;
+        .col {
+          width: 33.333333%;
+        }
+      }
+    }
+    .showcase {
+      .row {
+        display: flex;
+        .col {
+          width: 50%;
+          .content {
+            padding: 7rem;
+          }
+        }
+      }
+    }
+    .people {
+      .row {
+        display: flex;
+        .col {
+          width: 33.3333333%;
+        }
+      }
+    }
+    .call {
+      input[type="email"] {
+        width: 50%;
+        padding: 2rem 1.6rem;
+      }
+      .btn {
+        display: inline;
+      }
+    }
+    footer {
+      padding: 5rem;
+      .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        .col {
+          ul {
+            display: flex;
+            a {
+              color: $primary-color;
+              margin-right: 6px;
+              font-size: 2.6rem;
+            }
+            i {
+              color: #fff;
+              background-color: $primary-color;
+              padding: 1rem 1.4rem;
+              border-radius: 50%;
+              &:hover {
+                background-color: darken($primary-color, 10%);
+              }
+            }
+          }
+          p {
+            font-size: 2rem;
+           margin-top: 6px;
+          }
+        }
+      }
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  html{
+    .showcase {
+      .row {
+        .col {
+          .content {
+            padding: 16rem;
+          }
+        }
+      }
+    }
+    .container {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
